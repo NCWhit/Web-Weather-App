@@ -59,7 +59,7 @@ async function queryWeather(){
         }
 
         const objData = await objResponse.json()  
-        // Update HTML with Current Weather conditions pulled form fetch
+        // Update HTML with Current Weather conditions pulled from fetch
         document.getElementById("Temprature").textContent = objData.current.temperature_2m + " °F"
         document.getElementById("Humidity").textContent = objData.current.relative_humidity_2m + " %"
 
@@ -149,6 +149,7 @@ async function queryWeather(){
         console.log('Error fetching objData',objError)
         }
 }
+// If statement used to access service worker to allow for PWA functionality
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
@@ -168,6 +169,7 @@ queryWeather()
 
 // AI Use
 // I used AI to save time by generating the switch case for updating the weather condtion, I used ChatGPT for this
+// I also used to help me with setting this up as a PWA to allow it to properly install as an app on mobile devices, also done with ChatGPT
 </script>
 </html>
 
