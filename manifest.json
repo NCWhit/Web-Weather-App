@@ -2,7 +2,6 @@
     "name": "Weather App",
     "short_name": "Weather",
     "description": "A simple weather app that shows current weather conditions.",
-    "start_url": "https://ncwhit.github.io/Web-Weather-App/",
     "display": "standalone",
     "background_color": "#212529",
     "theme_color": "#343a40",
